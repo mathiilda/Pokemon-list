@@ -1,0 +1,80 @@
+@import "../base.scss";
+
+.hidden {
+  display: none;
+}
+
+.todo-container {
+  padding: 1em;
+  background-color: $background;
+  border-radius: 10px;
+  width: 35%;
+  margin: 2em auto;
+  color: whitesmoke;
+}
+
+.header,
+.pokemon-container,
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pokemon-container {
+  padding: 0.05em 1em;
+  border-radius: 10px;
+  background-color: $pokemon-background;
+  margin-bottom: 1em;
+
+  .pokemon-container-text {
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.button {
+  padding: 0.5em 0.5em;
+  margin: auto 0;
+  border-radius: 5px;
+  height: 2.5em;
+
+  .button-text {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.create-button {
+  border-color: $create;
+  background-color: $create;
+  margin-right: 1em;
+  width: 9.5em;
+
+  &:hover {
+    background-color: $create-hover;
+    border-color: $create-hover;
+  }
+}
+
+.update-button {
+  border-color: $update;
+  background-color: $update;
+
+  &:hover {
+    background-color: $update-hover;
+    border-color: $update-hover;
+  }
+}
+
+.delete-button {
+  border-color: $delete;
+  background-color: $delete;
+  margin-left: 0.5em;
+
+  &:hover {
+    background-color: $delete-hover;
+    border-color: $delete-hover;
+  }
+}
